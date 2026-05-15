@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-         choice(name: 'CHOICES', choices: ['mvn package', 'mvn test','package'], description: 'this is options') 
+         choice(name: 'CHOICES', choices: ['mvn package', 'mvn test', 'mvn validate','package','mvn clean'], description: 'this is options') 
          }
     triggers { 
         pollSCM('* * * * *')
