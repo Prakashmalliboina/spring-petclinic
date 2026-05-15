@@ -6,7 +6,7 @@ pipeline {
     triggers { 
         pollSCM('* * * * *')
     }
-    tool {
+    tools {
         jdk 'java17'
         maven 'maven3.9.12'
     }
